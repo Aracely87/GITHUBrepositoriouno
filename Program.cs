@@ -20,3 +20,9 @@ for(var i=0;i<Poblacion.Length;i++)
 Console.WriteLine($"Poblacion General:{Poblacion.Sum():N0}");
 Console.WriteLine($"Departamento con mayor polacion:{maxDepkey}");
 Console.WriteLine($"Departamento con menor Poblacion:{minDepkey}");
+//mostrar el diccionario sin ordenas
+Console.WriteLine($"datos desordenado");
+foreach (var item in diccionario)
+Console.WriteLine($"{item.key,-20}==>{item.Value,10:N0}");
+Console.WriteLine();
+//ordenando con LINQ OrdeBy el diccionario
